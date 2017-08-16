@@ -8,7 +8,7 @@ const arr = [1, 2, 3, 4, 5, 6]
 
 const findOdds = arr.filter(x => x % 2 === 1)
 
-findOdds()
+console.log(findOdds) // [1, 3, 5]
 
 // Vanilla filter implementation
 // Same head/tail example from map and reduce
@@ -29,4 +29,4 @@ const Filter = ([head, ...tail], predicate) =>
   : Filter(tail, predicate)
 
 const findOddsAgain = Filter(arr, x => x % 2 === 0)
-findOddsAgain()
+console.log(findOddsAgain) // [1, 3, 5]
