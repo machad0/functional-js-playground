@@ -3,7 +3,7 @@ const formatCurrency = (symbol, decimal) => {
     const fullVal = Math.trunc(val / 100)
     let fractionPart = val % 100
     if (fractionPart < 10) fractionPart = '0' + fractionPart
-    return `${symbol}${fullVal},${decimal},${fractionPart}`
+    return `${symbol}${fullVal}${decimal}${fractionPart}`
   }
 }
 
