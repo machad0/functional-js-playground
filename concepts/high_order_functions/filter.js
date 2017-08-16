@@ -2,6 +2,14 @@
 // a new array with elements for which function passed to filter
 // yields a truthy value
 
+// Using built-in filter
+
+const arr = [1, 2, 3, 4, 5, 6]
+
+const findOdds = arr.filter(x => x % 2 === 1)
+
+findOdds()
+
 // Vanilla filter implementation
 // Same head/tail example from map and reduce
 // but with a predicate function to test the elements
@@ -12,9 +20,13 @@
 // retuns false, It simply filter the tail of the array.
 // Note that implementation it's kinda bad, since you have a value of
 // a ternary operator linking another one.
+
 const Filter = ([head, ...tail], predicate) =>
-  typeof head === 'undefined' 
+  typeof head === 'undefined'
   ? []
-  : predicate(head) 
+  : predicate(head)
   ? [head, ...Filter(tail, predicate)]
-  : filter(tail, predicate)
+  : Filter(tail, predicate)
+
+const findOddsAgain = Filter(arr, x => x % 2 === 0)
+findOddsAgain()
