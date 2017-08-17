@@ -29,3 +29,17 @@ currencies.forEach(val => {
 })
 
 console.log('expensivveItems ->', expensiveItems)
+
+// Declarative way
+
+const formatCurr = currencies.map(n => formatter(n))
+
+console.log(formatCurr)
+
+const sumVal = currencies.reduce((val, acc) => val + acc, 0)
+
+console.log(sumVal)
+
+const expensive = currencies.filter(val => val >= 1000)
+
+console.log(expensive)
