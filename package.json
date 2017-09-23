@@ -1,0 +1,23 @@
+{
+  "name": "functional-js-playground",
+  "version": "1.0.0",
+  "description": "js functional studies",
+  "main": "index.js",
+  "dependencies": {
+    "ramda": "^0.24.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machad0/functional-js-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/machad0/functional-js-playground/issues"
+  },
+  "homepage": "https://github.com/machad0/functional-js-playground#readme"
+}
