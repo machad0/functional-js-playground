@@ -25,3 +25,18 @@ fx(5) // 15
 fCurried(3)(5) // 15
 
 ```
+
+### Ramda Currying
+
+```
+import curry from 'ramda'
+
+const fun = (x, y, z) => x * y * z
+
+const funRamdaCurried = curry(fun)
+
+funRamdaCurried(3)(5)(2) // 30
+
+funRamdaCurried(3, 5)(2) // 30
+
+```
