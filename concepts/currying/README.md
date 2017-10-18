@@ -2,7 +2,7 @@
 
 Transforms a function with multiple arguments to a chain of function applications with one argument each
 
-```
+```javascript
 const f = (x, y) => x * y
 
 f(3, 5) // 15
@@ -11,7 +11,7 @@ f(3, 5) // 15
 
 becomes
 
-```
+```javascript
 const fCurried = x => y => x * y
 
 // you can encapsulate it into another constant
@@ -28,7 +28,7 @@ fCurried(3)(5) // 15
 
 ### Ramda Currying
 
-```
+```javascript
 import curry from 'ramda'
 
 const fun = (x, y, z) => x * y * z
